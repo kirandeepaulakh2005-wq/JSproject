@@ -1,21 +1,32 @@
 let email=document.querySelector("#email");
 let password=document.querySelector("#password");
 let form =document.querySelector("form");
+
 form.addEventListener("submit",function(dets){
     dets.preventDefault();
+
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     const passwordRegex = /^.{6,}$/;
+
 let emailans=emailRegex.test(email.value);
 let passwordans=passwordRegex.test(password.value);
 
+let isValid=true;
+ 
 if(!emailans){
-    document.querySelector("#emailError").textContent="Email is incorrect"
-    document.querySelector("#emailError").style.display="initial"
+    document.querySelector("#emailError").textContent="Email is incorrect";
+    document.querySelector("#emailError").style.display="initial";
+    isValid=false;
 
 }
 if(!passwordans){
-    document.querySelector("#passwordError").textContent="Password is incorrect"
-    document.querySelector("#passwordError").style.display="initial"
+    document.querySelector("#passwordError").textContent="Password is incorrect";
+    document.querySelector("#passwordError").style.display="initial";
+    isValid=false;
+}
 
+if(isValid){
+    document.querySelector("#resultmessage").textContent="Everything is correct.";
 }
 });
