@@ -12,7 +12,7 @@ else{
 if(localStorage.getItem("theme")){
     document.body.classList.add(localStorage.getItem("theme"));
 }
-else{
+else{``
     setDarkorLight();
 }
 
