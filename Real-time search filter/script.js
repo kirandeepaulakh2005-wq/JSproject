@@ -45,35 +45,28 @@ arr.forEach(function(user){
 const card = document.createElement("div");
 card.classList.add("card");
 
-
-// image
 const img = document.createElement("img");
 img.src = user.pic;
 img.classList.add("big-img");
 
 
-// blur layer
 const blurredLayer = document.createElement("div");
 blurredLayer.classList.add("blurred-layer");
 blurredLayer.style.backgroundImage = `url(${user.pic})`;
 
 
-// content
 const content = document.createElement("div");
 content.classList.add("content");
 
 
-// heading
 const heading = document.createElement("h3");
 heading.textContent = user.name;
 
 
-// paragraph
 const para = document.createElement("p");
 para.textContent = user.bio;
 
 
-// append
 content.appendChild(heading);
 content.appendChild(para);
 
@@ -89,8 +82,6 @@ document.querySelector(".cards").appendChild(card);
 
 showUsers(users);
 
-
-// SEARCH FILTER
 
 let inp = document.querySelector(".inp");
 
