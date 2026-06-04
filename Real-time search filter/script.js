@@ -20,7 +20,7 @@ let users = [
     bio: "Content writer who enjoys storytelling and blogging."
   },
   {
-    name: "Kabir Singh",
+    name: "Ravi Singh",
     pic: "https://images.unsplash.com/photo-1504593811423-6dd665756598",
     bio: "Fitness lover and part-time web developer."
   },
@@ -30,7 +30,7 @@ let users = [
     bio: "UI/UX designer focused on user-friendly experiences."
   },
   {
-    name: "Dev Malhotra",
+    name: "Dev Tiwari",
     pic: "https://images.unsplash.com/photo-1504257432389-52343af06ae3",
     bio: "Tech student exploring AI and full-stack development."
   }

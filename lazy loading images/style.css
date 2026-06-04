@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+.spacer {
+    height: 200px;
+}
+
+.lazy-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 50px 0;
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+}
+
+.lazy-image.loaded {
+    opacity: 1;
+}
